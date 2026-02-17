@@ -1,0 +1,26 @@
+# The Domain Diaries - Jekyll Config
+title: The Domain Diaries
+description: Real pentesting stories from the trenches of Active Directory
+author: The Domain Diarist
+baseurl: ""
+url: "https://thedomaindiaries.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks
+permalink: /:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

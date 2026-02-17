@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="banner">
+            <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/assets/images/domain-diaries-logo.svg' | relative_url }}" alt="The Domain Diaries" class="logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/about' | relative_url }}">About</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; {{ 'now' | date: "%Y" }} The Domain Diaries. All stories are from real engagements (anonymized).</p>
+        <p class="terminal-prompt">C:\> <span class="green">Stay curious. Stay ethical.</span></p>
+    </footer>
+</body>
+</html>
