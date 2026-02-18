@@ -16,7 +16,7 @@ A helpdesk account. A seasonal password. A disabled account nobody remembered.
 
 That's the kill chain. That's how I went from zero access to Domain Admin.
 
-Weak passwords on IT accounts are a tale as old as Active Directory itself—whether it's lax password policies, no enforcement of complexity, or a lack of a blocklist allowing users to create common passwords such as `Spring2026!`. Disabled accounts are equally common—former employees, old service accounts, relics of migrations past. But when a weak helpdesk credential has control over a forgotten privileged account? That's not two findings. That's a domain compromise waiting to happen.
+Weak passwords on IT accounts are a tale as old as Active Directory itself—whether it's lax password policies, no enforcement of complexity, or a lack of a blocklist allowing users to create common passwords such as `Spring2026!`. Disabled accounts are equally common—former employees, old service accounts, relics of migrations past. But when a weak helpdesk credential has control over a forgotten privileged account? That's domain compromise waiting to happen.
 
 All screenshots in this blog were recreated in a local lab to simulate the attack.
 
@@ -90,7 +90,7 @@ With the account enabled, the next step was resetting its password. GenericAll m
 
 ![Password reset confirmation](/assets/images/helpdesk_9.png)
 
-Now I had full access to `oldadmin`—an account that had been disabled but never stripped of its privileges.
+Now I had full access to `oldadmin`; an account that had been disabled but never stripped of its privileges.
 
 ---
 
@@ -100,10 +100,10 @@ The `oldadmin` account wasn't a Domain Admin directly. However, it had something
 
 This opened the door to a Resource-Based Constrained Delegation (RBCD) attack. Here's how it works:
 
-1. **Create or compromise a machine account** — Attackers need control of a computer object in the domain
-2. **Modify the DC's `msDS-AllowedToActOnBehalfOfOtherIdentity` attribute** — This tells the DC to trust our machine account to impersonate users
-3. **Request a service ticket as any user** — Including Domain Admins
-4. **Authenticate to the DC with elevated privileges** — Game over
+1. **Create or compromise a machine account**: Attackers need control of a computer object in the domain
+2. **Modify the DC's `msDS-AllowedToActOnBehalfOfOtherIdentity` attribute**: This tells the DC to trust our machine account to impersonate users
+3. **Request a service ticket as any user**: Including Domain Admins
+4. **Authenticate to the DC with elevated privileges**: Game over
 
 ### Step 1: Create a Machine Account
 
@@ -196,7 +196,7 @@ Two seemingly minor issues combined to compromise this entire domain:
 
 Neither finding alone would have been critical. Together, they created a direct path to Domain Admin.
 
-The lesson? **Your AD is only as strong as your weakest password**—and that password is probably `Spring2025!`.
+The lesson? **Your AD is only as strong as your weakest password** and that password is probably `Spring2025!`.
 
 ---
 
