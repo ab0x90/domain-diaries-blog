@@ -35,7 +35,7 @@ These blocklists should include:
 
 Without these protections, the success rate of password spraying attacks increases dramatically.
 
-[CISA](https://www.cisa.gov/resources-tools/training/formulate-strong-passwords-and-pin-codes) recommends a 16-character randomized password consisting of random words (passphrase) or completely random characters—commonly generated from a password manager.
+[CISA](https://www.cisa.gov/resources-tools/training/formulate-strong-passwords-and-pin-codes) recommends a 16-character randomized password consisting of random words (passphrase) or completely random characters, commonly generated from a password manager.
 
 **Strong passwords should be:**
 - **Long** — At least 16 characters
@@ -52,7 +52,7 @@ In this engagement, the lack of these controls led directly to the compromise of
 
 After identifying that the compromised account belonged to the helpdesk team, the next step was understanding what this account could do. This is where things got interesting.
 
-Using BloodHound to map the account's permissions, I discovered an interesting privilege: the helpdesk account had **GenericAll** privileges over a disabled—but still privileged—user account called `oldadmin`.
+Using BloodHound to map the account's permissions, I discovered an interesting privilege: the helpdesk account had **GenericAll** privileges over a disabled, but still privileged, user account called `oldadmin`.
 
 ![BloodHound showing helpdesk account](/assets/images/helpdesk_1.png)
 
