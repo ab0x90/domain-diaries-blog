@@ -5,15 +5,15 @@ title: About
 
 # About The Domain Diaries
 
-Welcome to **The Domain Diaries** — a collection of real penetration testing stories, focused primarily on Active Directory environments.
+Welcome to **The Domain Diaries**; a collection of real penetration testing stories, focused primarily on Active Directory environments.
 
 ## What You'll Find Here
 
 - 🔓 **Real engagement stories** (anonymized, of course)
-- 🎫 **Kerberos attacks** — Golden tickets, silver tickets, Kerberoasting
-- 🔑 **Credential harvesting** — Pass-the-hash, NTLM relay, DCSync
-- 🛤️ **Lateral movement** — How attackers pivot through networks
-- 🛡️ **Defense insights** — What blue teams can learn from red team ops
+- 🎫 **Kerberos attacks** Golden tickets, silver tickets, Kerberoasting
+- 🔑 **Credential harvesting** Pass-the-hash, NTLM relay, DCSync
+- 🛤️ **Lateral movement** How attackers pivot through networks
+- 🛡️ **Defense insights** What blue teams can learn from red team ops
 
 ## Who Am I?
 
