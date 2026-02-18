@@ -196,7 +196,7 @@ Two seemingly minor issues combined to compromise this entire domain:
 
 Neither finding alone would have been critical. Together, they created a direct path to Domain Admin.
 
-The lesson? **Your AD is only as strong as your weakest password** and that password is probably `Spring2025!`.
+The lesson? **Your AD is only as strong as your weakest password** and that password is probably `Spring2026!`.
 
 ---
 
