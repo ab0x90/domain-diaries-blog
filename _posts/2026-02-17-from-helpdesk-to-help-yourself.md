@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "From Helpdesk to Help-Yourself: An AD Love Story"
+title: "From Helpdesk to Help-Yourself"
 date: 2026-02-17
 author: Alan Bednar
 tags:
