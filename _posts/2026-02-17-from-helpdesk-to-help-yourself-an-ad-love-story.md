@@ -202,5 +202,3 @@ The lesson? **Your AD is only as strong as your weakest password** and that pass
 ---
 
 *Stay curious. Stay ethical. And please, stop using seasonal passwords.*
-
-— AB
