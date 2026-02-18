@@ -2,6 +2,7 @@
 layout: post
 title: "From Helpdesk to Help-Yourself: An AD Love Story"
 date: 2026-02-17
+author: Alan Bednar
 tags:
   - passwords
   - helpdesk
