@@ -17,7 +17,7 @@ Welcome to **The Domain Diaries** — a collection of real penetration testing s
 
 ## Who Am I?
 
-A pentester who's seen things. Domain Admin things. I write about my experiences to help others learn — both attackers looking to improve their craft and defenders trying to understand the threats they face.
+A pentester who's seen things. I write about my experiences to help others learn — both attackers looking to improve their craft and defenders trying to understand the threats they face.
 
 ## Disclaimer
 
