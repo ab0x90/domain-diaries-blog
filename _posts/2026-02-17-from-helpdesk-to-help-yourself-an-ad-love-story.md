@@ -16,7 +16,7 @@ A helpdesk account. A seasonal password. A disabled account nobody remembered.
 
 That's the kill chain. That's how I went from zero access to Domain Admin.
 
-Weak passwords on IT accounts are a tale as old as Active Directory itself, whether it's lax password policies, no enforcement of complexity, or a lack of a blocklist allowing users to create common passwords such as `Spring2026!`. Disabled accounts are equally common, former employees, old service accounts, relics of migrations past. But when a helpdesk account with weak credentials has control over a forgotten privileged account? That's domain compromise waiting to happen.
+Weak passwords on IT accounts are a tale as old as Active Directory itself; whether it's lax password policies, no enforcement of complexity, or a lack of a blocklist allowing users to create common passwords such as `Spring2026!`. Disabled accounts are equally common; former employees, old service accounts, relics of migrations past. But when a helpdesk account with weak credentials has control over a forgotten privileged account? That's domain compromise waiting to happen.
 
 All screenshots in this blog were recreated in a local lab to simulate the attack.
 
